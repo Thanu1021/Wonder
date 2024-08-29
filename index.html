@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Wonder Travels</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+    <div class="header-slideshow">
+        <img src="slide1.jpg" alt="Slide 1" class="active" class="responsive">
+        <img src="slide2.jpg" alt="Slide 2" class="inactive" class="responsive">
+        <img src="slide3.jpg" alt="Slide 3" class="inactive" class="responsive">
+
+        <!-- Next and Previous Buttons -->
+        <button class="prev-slide" id="prevSlide">&#10094;</button>
+        <button class="next-slide" id="nextSlide">&#10095;</button>
+    </div>
+</header>
+
+
+    <!-- Main Content -->
+    <main>
+        <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service-item">
+            <h3>Ticket Booking</h3>
+            <p>Book flights, buses, and trains with our reliable and hassle-free ticket booking service.</p>
+        </div>
+        <div class="service-item">
+            <h3>Visa Services</h3>
+            <p>Get assistance with your visa application process for various destinations worldwide.</p>
+        </div>
+        <div class="service-item">
+            <h3>Travel Insurance</h3>
+            <p>Secure your travel plans with our comprehensive travel insurance packages.</p>
+        </div>
+        <div class="service-item">
+            <h3>Hotel Booking</h3>
+            <p>Find and book hotels that suit your budget and preferences for your travels.</p>
+        </div>
+        <div class="service-item">
+            <h3>Translation Services</h3>
+            <p>We offer professional translation services to ensure smooth communication during your travels.</p>
+        </div>
+        <div class="service-item">
+            <h3>Tour Packages</h3>
+            <p>Explore our custom-designed tour packages that cover various popular destinations.</p>
+        </div>
+        <div class="service-item">
+            <h3>Vehicle Rental</h3>
+            <p>Rent vehicles for your travel needs, whether it’s for a city tour or a long journey.</p>
+        </div>
+    </div>
+</section>
+
+<section id="popular-destinations">
+    <h2>Our Popular Destinations</h2>
+    <div class="destinations-container">
+        <div class="destination">
+            <div class="card">
+                <div class="card-front">
+                    <img src="nallur.jpg" alt="Nallur">
+                    <h3>Nallur</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Nallur</h3>
+                    <p>The city of lights and love, offering stunning architecture, rich history, and world-famous cuisine. Explore the Eiffel Tower, Louvre Museum, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="destination">
+            <div class="card">
+                <div class="card-front">
+                    <img src="ella.jpg" alt="Ella">
+                    <h3>Ella</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Ella</h3>
+                    <p>Crystal-clear waters, luxurious resorts, and ultimate relaxation. Perfect for honeymooners and beach lovers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="destination">
+            <div class="card">
+                <div class="card-front">
+                    <img src="nuwara.jpg" alt="Nuwara Eliya">
+                    <h3>Nuwara Eliya</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Nuwara Eliya</h3>
+                    <p>Discover ancient temples, beautiful gardens, and a rich cultural experience in this historic city.</p>
+                </div>
+            </div>
+        </div>
+        <div class="destination">
+            <div class="card">
+                <div class="card-front">
+                    <img src="trinco.jpg" alt="Trincomalee">
+                    <h3>Trincomalee</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Trincomalee</h3>
+                    <p>The city that never sleeps, offering iconic landmarks, endless entertainment, and diverse culture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+
+
+       <section id="contact">
+   
+    
+    <button class="contact-toggle-btn" id="contactToggleBtn">Contact Us</button>
+    
+    <div class="contact-info-expanded" id="contactInfoExpanded">
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>021 221 7558</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>wondertravellanka@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>No 590, Point Pedro Road, Nallur, Jaffna</p>
+        </div>
+    </div>
+	<br>
+	<br>
+
+    <form action="send_email.php" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wonder Travels. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
